@@ -662,7 +662,7 @@ abstract class Connection
      * @return  string
      * @throws  \Hoa\Socket\Exception
      */
-    public function read($length, $flags = 0, $keepReading)
+    public function read($length, $flags = 0, $keepReading = true)
     {
         if (null === $this->getStream()) {
             throw new Socket\Exception(
